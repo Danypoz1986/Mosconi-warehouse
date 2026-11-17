@@ -20,6 +20,12 @@ If you're testing Mosconi Warehouse, it would be fun to add products inspired by
 - Store product information in PostgreSQL
 - Automated API and database tests
 
+## Screenshots
+
+### Inventory Management
+
+![Inventory Management][Images/Näyttökuva 2026-11-17 144820.png] 
+
 ## Technologies
 
 ### Backend
