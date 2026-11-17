@@ -55,6 +55,7 @@ If you're testing Mosconi Warehouse, it would be fun to add products inspired by
 
 ## Project Structure
 
+```text
 rust-inventory/
 ├── database/
 │   └── schema.sql
@@ -73,6 +74,7 @@ rust-inventory/
 ├── Cargo.lock
 ├── Cargo.toml
 └── README.md
+```
 
 ## Requirements
 
