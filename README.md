@@ -115,7 +115,7 @@ Follow the database setup instructions below before running the application.
 DATABASE_URL="host=localhost user=USER password=PASSWORD dbname=mosconi_warehouse"
 ```
 
-Replace `username` and `password` with your PostgreSQL credentials.
+Replace `USER` and `PASSWORD` with your PostgreSQL credentials.
 
 The `.env` file is excluded from Git to protect database credentials.
 
