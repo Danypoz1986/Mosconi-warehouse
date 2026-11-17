@@ -112,7 +112,7 @@ Follow the database setup instructions below before running the application.
 4. Add your PostgreSQL connection string:
 
 ```env
-DATABASE_URL=postgresql://username:password@localhost:5432/mosconi_warehouse
+DATABASE_URL="host=localhost user=USER password=PASSWORD dbname=mosconi_warehouse"
 ```
 
 Replace `username` and `password` with your PostgreSQL credentials.
@@ -183,7 +183,7 @@ Run `database/schema.sql` in the test database to create the required table.
 Create a `.env.test` file in the project root:
 
 ```env
-DATABASE_URL="host=localhost user=postgres password=PASSWORD dbname=mosconi_warehouse_test"
+DATABASE_URL="host=localhost user=USER password=PASSWORD dbname=mosconi_warehouse_test"
 ```
 
 Replace `username` and `password` with your PostgreSQL credentials.
