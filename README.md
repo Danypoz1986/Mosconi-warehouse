@@ -207,4 +207,3 @@ The project combines a command-line application with a browser-based inventory m
 ## Author
 
 Daniel Pozzoli
-```
