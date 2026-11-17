@@ -24,7 +24,7 @@ If you're testing Mosconi Warehouse, it would be fun to add products inspired by
 
 ### Inventory Management
 
-![Inventory Management][Images/Näyttökuva 2026-11-17 144820.png] 
+![Inventory Management][Images/inventory.png] 
 
 ## Technologies
 
