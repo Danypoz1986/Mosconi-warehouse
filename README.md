@@ -186,7 +186,7 @@ Create a `.env.test` file in the project root:
 DATABASE_URL="host=localhost user=USER password=PASSWORD dbname=mosconi_warehouse_test"
 ```
 
-Replace `username` and `password` with your PostgreSQL credentials.
+Replace `USER` and `PASSWORD` with your PostgreSQL credentials.
 
 The test database is separate from the main database to prevent automated tests from modifying production data.
 
