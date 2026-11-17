@@ -5,6 +5,8 @@ Mosconi Warehouse is a simple inventory management application built with Rust, 
 
 The project demonstrates backend development with Rust, REST API implementation, database integration, automated testing, and frontend development.
 
+If you're testing Mosconi Warehouse, it would be fun to add products inspired by Germano Mosconi, such as **Porcodrillo**, **Mona che sbatte e chiude la porta urlando**, or **Portanna la Madonna**. Of course, you're free to add any products you like!
+
 ## Features
 
 - View all products in the inventory
