@@ -1,0 +1,218 @@
+
+/* ========================================
+   General layout
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Application header */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 10px 0 0;
+    color: #cbd5e1;
+}
+
+/* Main content container */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Content sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   Products table
+======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Table headers */
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+}
+
+/* Highlight table rows on hover */
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Prevent action buttons from wrapping */
+#products-table td:last-child {
+    white-space: nowrap;
+}
+
+/* Smaller buttons inside the products table */
+#products-table button {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Space between Edit and Delete buttons */
+#products-table td:last-child button + button {
+    margin-left: 8px;
+}
+
+/* ========================================
+   Product form
+======================================== */
+
+/* Center the form horizontally */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* Center the form section title */
+section:has(#product-form) h2 {
+    text-align: center;
+}
+
+/* Input labels */
+label {
+    font-weight: 600;
+}
+
+/* Input fields */
+input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Highlight the focused input */
+input:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+/* ========================================
+   Buttons
+======================================== */
+
+/* Default button style */
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Default button hover */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Delete button */
+#products-table .delete-button {
+    background-color: #dc2626;
+}
+
+#products-table .delete-button:hover {
+    background-color: #b91c1c;
+}
+
+/* Keep the Cancel button hidden when not editing */
+#cancel-button[hidden] {
+    display: none;
+}
+
+/* Cancel button */
+#cancel-button {
+    background-color: #64748b;
+}
+
+#cancel-button:hover {
+    background-color: #475569;
+}
+
+/* ========================================
+   Responsive layout
+======================================== */
+
+@media (max-width: 700px) {
+
+    /* Reduce header title size */
+    header h1 {
+        font-size: 26px;
+    }
+
+    /* Reduce horizontal spacing */
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    /* Allow horizontal scrolling on small screens */
+    #products-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Reduce table cell spacing */
+    th,
+    td {
+        padding: 10px;
+    }
+
+    /* Make the form fit smaller screens */
+    form {
+        max-width: 100%;
+    }
+}
