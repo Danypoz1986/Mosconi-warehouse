@@ -83,6 +83,24 @@ Before running the application, install:
 - Rust and Cargo
 - PostgreSQL
 
+
+## Installation
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/Danypoz1986/Mosconi-warehouse.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Mosconi-warehouse
+```
+
+Follow the database setup instructions below before running the application.
+
+
 ## Database Setup
 
 1. Create a PostgreSQL database named `mosconi_warehouse`.
@@ -160,7 +178,7 @@ The project includes 10 automated tests covering:
 
 Create a separate PostgreSQL database named `mosconi_warehouse_test`.
 
-Run `database/schema.sql` in the test database.
+Run `database/schema.sql` in the test database to create the required table.
 
 Create a `.env.test` file in the project root:
 
@@ -168,7 +186,11 @@ Create a `.env.test` file in the project root:
 DATABASE_URL=postgresql://username:password@localhost:5432/mosconi_warehouse_test
 ```
 
+Replace `username` and `password` with your PostgreSQL credentials.
+
 The test database is separate from the main database to prevent automated tests from modifying production data.
+
+**Important:** Automated integration tests create, update, and delete temporary products in the test database. Do not use a database containing important data for testing.
 
 ### Run Tests
 
