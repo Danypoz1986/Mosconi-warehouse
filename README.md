@@ -26,6 +26,10 @@ If you're testing Mosconi Warehouse, it would be fun to add products inspired by
 
 ![Inventory Management](Images/inventory.png) 
 
+### Edit Product
+
+![Edit product](Images/edit-product.png)
+
 ## Technologies
 
 ### Backend
